@@ -24,7 +24,9 @@
                 background:#f2f2f2;
                 width: 100%;
                 margin: 0px auto;
-                line-height: 60px; font-family: 'Lato', sans-serif;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                line-height: 40px; font-family: 'Lato', sans-serif;
                 font-weight: 300;
                 font-size: 20px;
                 text-align: center;
@@ -44,7 +46,7 @@
                 font-family: 'Lato', sans-serif;
                 font-weight: 100;
                 text-align: center;
-                margin: 0px auto;
+                margin: 0px 5px;
                 position: relative;
                 left: -20px;
             }
@@ -104,11 +106,13 @@
             }
             #item_price {
                 color: gray;
-                font-size: 10px;
+                font-size: 14px;
+                font-weight: 300;
             }
             #item_price2 {
-                color: gray;
+                color: #c8c8c8;
                 font-size: 10px;
+                font-weight: 300;
             }
             
             /* card_image settings */
@@ -158,14 +162,14 @@
     </head>
     
     <body>
-        <div id="horizontal_title">Electronics</div>
+        <div id="horizontal_title">Shopping list<br> Electronics</div>
         <div id="horizontal_scrollbar">
             <ul>
                 <li>
                     <div id="card_title">
                         <p id="item_name">iPhone 7</p>
-                        <p id="item_price">23 487 Kč</p>
-                        <p id="item_price2">869 €</p>
+                        <p id="item_price">22 200 Kč</p>
+                        <p id="item_price2">cheapest in UK</p>
                     </div>
                     <div id="card_image">
                         <img src="Media/ShoppingList/iphone7.png">
@@ -179,37 +183,55 @@
                             <tr>
                                 <td id="left">Color</td><td id="right">mate black</td>
                             </tr>
-                            <tr>
-                                <td id="left">Release</td><td id="right">16 September 2016</td>
-                            </tr>
                         </table>
-                        
                         <br>
-                        <p id="card_box_title">Reason why do I want it?</p>
+                        
+                        <p id="card_box_title">Availability</p>
                         <table>
                             <tr>
-                                <td id="left">Why do I want it?</td><td id="right">Because I was waiting since March and I have saved many money.</td>
+                                <td id="left">NL</td><td id="right">16 September 2016</td>
+                            </tr>
+                            <tr>
+                                <td id="left">CZ</td><td id="right">23. Září 2016</td>
+                            </tr>
+                            <tr>
+                                <td id="left">+</td><td id="right">right after I save enough money</td>
                             </tr>
                         </table>
                         <br>
+                        
+                        <p id="card_box_title">Reason</p>
+                        <table>
+                            <tr>
+                                <td id="left">Why do I want it?</td><td id="right">Because I considered since March and I have saved some money.</td>
+                            </tr>
+                        </table>
+                        <br>
+                        
                         <p id="card_box_title">Money</p>
                         <table>
                             <tr>
-                                <td width="33%"> Total<br>23487 Kč</td><td width="33%">Prepared<br>15000 Kč</td><td width="33%">Left<br>8487Kč</td>
+                                <td width="33%"> Total<br>22200 Kč</td><td width="33%">Prepared<br>15000 Kč</td><td width="33%">Left<br>7200Kč</td>
                             </tr>
                         </table>
-                        
                         <br>
+                        <table>
+                            <tr>
+                                <td id="left">Tip</td><td id="right">In Europe you can save cca 20€ if you purchase this item in England</td>
+                            </tr>
+                        </table>
+                        <br>
+                        
                         <p id="card_box_title">Links</p>
                         <table>
                             <tr>
-                                <td width="25%"><a href="http://www.apple.com/iphone-7/" target="_blank">Apple.com</a></td>
-                                <td width="25%"><a href="http://www.apple.com/nl/iphone-7/" target="_blank">Apple.nl</a></td>
-                                <td width="25%"><a href="http://www.apple.com/uk/iphone-7/" target="_blank">Apple.uk</a></td>
-                                <td width="25%"><a href="http://www.apple.com/de/iphone-7/" target="_blank">Apple.de</a></td>
+                                <td width="25%"><a href="http://www.apple.com/iphone-7/" target="_blank">Apple.com</a><br>$749.00</td>
+                                <td width="25%"><a href="http://www.apple.com/nl/iphone-7/" target="_blank">Apple.nl</a><br>€ 879,00</td>
+                                <td width="25%"><a href="http://www.apple.com/uk/iphone-7/" target="_blank">Apple.uk</a><br>£699.00</td>
+                                <td width="25%"><a href="http://www.apple.com/de/iphone-7/" target="_blank">Apple.de</a><br>€ 869,00</td>
                             </tr>
                             <tr>
-                                <td colspan="4" width="100%"><a href="http://www.apple.com/cz/iphone-7/" target="_blank">Apple.cz</a></td>
+                                <td colspan="4" width="100%"><a href="http://www.apple.com/cz/iphone-7/" target="_blank">Apple.cz</a><br>24 390 Kč</td>
                             </tr>
                         </table>
                     </div>
@@ -217,53 +239,77 @@
                 
                 <li>
                     <div id="card_title">
-                        <p id="item_name">iPhone 7</p>
-                        <p id="item_price">23 487 Kč</p>
-                        <p id="item_price2">869 €</p>
+                        <p id="item_name"> Watch</p>
+                        <p id="item_price">12 200  Kč</p>
+                        <p id="item_price2">cheapest in DE</p>
                     </div>
                     <div id="card_image">
-                        <img src="Media/ShoppingList/iphone7.png">
+                        <img src="Media/ShoppingList/AppleWatchBrown.png">
                     </div>
                     <div id="card_box">
                         <p id="card_box_title">Specs</p>
                         <table>
                             <tr>
-                                <td id="left">Storage</td><td id="right">128GB</td>
+                                <td id="left">Model</td><td id="right">Silver Aluminium Case with White Sport Band</td>
                             </tr>
                             <tr>
-                                <td id="left">Color</td><td id="right">mate black</td>
-                            </tr>
-                            <tr>
-                                <td id="left">Release</td><td id="right">16 September 2016</td>
+                                <td id="left">Case Size</td><td id="right">42mm Case</td>
                             </tr>
                         </table>
-                        
                         <br>
-                        <p id="card_box_title">Reason why do I want it?</p>
+                        
+                        <p id="card_box_title">Available</p>
                         <table>
                             <tr>
-                                <td id="left">Why do I want it?</td><td id="right">Because I was waiting since March and I have saved many money.</td>
+                                <td id="left">NL</td><td id="right">16 September 2016</td>
+                            </tr>
+                            <tr>
+                                <td id="left">CZ</td><td id="right">23. Září 2016</td>
+                            </tr>
+                            <tr>
+                                <td id="left">+</td><td id="right">right after I save enough money</td>
                             </tr>
                         </table>
                         <br>
+                        
+                        <p id="card_box_title">Reason</p>
+                        <table>
+                            <tr>
+                                <td id="left">Why do I want it?</td><td id="right">
+                                -  activity tracker<br>
+                                - breathe & stand up alerts<br>
+                                - gps independent on phone<br>
+                                - watch<br>
+                                - little storage for music<br>
+                                - connect to wireless headphones</td>
+                            </tr>
+                        </table>
+                        <br>
+                        
                         <p id="card_box_title">Money</p>
                         <table>
                             <tr>
-                                <td width="33%"> Total<br>23487 Kč</td><td width="33%">Prepared<br>15000 Kč</td><td width="33%">Left<br>8487Kč</td>
+                                <td width="33%"> Total<br>12200 Kč</td><td width="33%">Prepared<br>0 Kč</td><td width="33%">Left<br>12200 Kč</td>
                             </tr>
                         </table>
-                        
                         <br>
+                        <table>
+                            <tr>
+                                <td id="left">Tip</td><td id="right">In Europeyou can save cca 5€ if you purchase this item in Germany</td>
+                            </tr>
+                        </table>
+                        <br>
+                        
                         <p id="card_box_title">Links</p>
                         <table>
                             <tr>
-                                <td width="25%"><a href="http://www.apple.com/iphone-7/" target="_blank">Apple.com</a></td>
-                                <td width="25%"><a href="http://www.apple.com/nl/iphone-7/" target="_blank">Apple.nl</a></td>
-                                <td width="25%"><a href="http://www.apple.com/uk/iphone-7/" target="_blank">Apple.uk</a></td>
-                                <td width="25%"><a href="http://www.apple.com/de/iphone-7/" target="_blank">Apple.de</a></td>
+                                <td width="25%"><a href="http://www.apple.com/shop/buy-watch/apple-watch" target="_blank">Apple.com</a><br>$399.00</td>
+                                <td width="25%"><a href="http://www.apple.com/nl/shop/buy-watch/apple-watch" target="_blank">Apple.nl</a><br>€ 469,00</td>
+                                <td width="25%"><a href="http://www.apple.com/uk/shop/buy-watch/apple-watch" target="_blank">Apple.uk</a><br>£399.00</td>
+                                <td width="25%"><a href="http://www.apple.com/de/shop/buy-watch/apple-watch" target="_blank">Apple.de</a><br>€ 449,00</td>
                             </tr>
                             <tr>
-                                <td colspan="4" width="100%"><a href="http://www.apple.com/cz/iphone-7/" target="_blank">Apple.cz</a></td>
+                                <td colspan="4" width="100%"><a href="http://www.apple.com/cz/shop/buy-watch/apple-watch" target="_blank">Apple.cz</a><br>12 290 Kč</td>
                             </tr>
                         </table>
                     </div>
@@ -271,53 +317,151 @@
                 
                 <li>
                     <div id="card_title">
-                        <p id="item_name">iPhone 7</p>
-                        <p id="item_price">23 487 Kč</p>
-                        <p id="item_price2">869 €</p>
+                        <p id="item_name"> Watch</p>
+                        <p id="item_price">11 290  Kč</p>
+                        <p id="item_price2">cheapest in CZ</p>
                     </div>
                     <div id="card_image">
-                        <img src="Media/ShoppingList/iphone7.png">
+                        <img src="Media/ShoppingList/AppleWatchPink.png">
                     </div>
                     <div id="card_box">
                         <p id="card_box_title">Specs</p>
                         <table>
                             <tr>
-                                <td id="left">Storage</td><td id="right">128GB</td>
+                                <td id="left">Model</td><td id="right">Rose Gold Aluminium Case with Pink Sand Sport Band</td>
                             </tr>
                             <tr>
-                                <td id="left">Color</td><td id="right">mate black</td>
-                            </tr>
-                            <tr>
-                                <td id="left">Release</td><td id="right">16 September 2016</td>
+                                <td id="left">Case Size</td><td id="right">42mm Case</td>
                             </tr>
                         </table>
-                        
                         <br>
-                        <p id="card_box_title">Reason why do I want it?</p>
+                        
+                        <p id="card_box_title">Available</p>
                         <table>
                             <tr>
-                                <td id="left">Why do I want it?</td><td id="right">Because I was waiting since March and I have saved many money.</td>
+                                <td id="left">NL</td><td id="right">16 September 2016</td>
+                            </tr>
+                            <tr>
+                                <td id="left">CZ</td><td id="right">23. Září 2016</td>
+                            </tr>
+                            <tr>
+                                <td id="left">+</td><td id="right">right after I save enough money</td>
                             </tr>
                         </table>
                         <br>
+                        
+                        <p id="card_box_title">Reason</p>
+                        <table>
+                            <tr>
+                                <td id="left">Why do I want it?</td><td id="right">
+                                - for mother as present<br>
+                                - it has emergency button<br>
+                                -  activity tracker<br>
+                                - breathe & stand up alerts<br>
+                                - gps independent on phone<br>
+                                - watch<br>
+                                - little storage for music<br>
+                                - connect to wireless headphones</td>
+                            </tr>
+                        </table>
+                        <br>
+                        
                         <p id="card_box_title">Money</p>
                         <table>
                             <tr>
-                                <td width="33%"> Total<br>23487 Kč</td><td width="33%">Prepared<br>15000 Kč</td><td width="33%">Left<br>8487Kč</td>
+                                <td width="33%"> Total<br>11290 Kč</td><td width="33%">Prepared<br>0 Kč</td><td width="33%">Left<br>11290 Kč</td>
                             </tr>
                         </table>
-                        
                         <br>
+                        <table>
+                            <tr>
+                                <td id="left">Tip</td><td id="right">Purchase in Czechia</td>
+                            </tr>
+                        </table>
+                        <br>
+                        
                         <p id="card_box_title">Links</p>
                         <table>
                             <tr>
-                                <td width="25%"><a href="http://www.apple.com/iphone-7/" target="_blank">Apple.com</a></td>
-                                <td width="25%"><a href="http://www.apple.com/nl/iphone-7/" target="_blank">Apple.nl</a></td>
-                                <td width="25%"><a href="http://www.apple.com/uk/iphone-7/" target="_blank">Apple.uk</a></td>
-                                <td width="25%"><a href="http://www.apple.com/de/iphone-7/" target="_blank">Apple.de</a></td>
+                                <td width="25%"><a href="http://www.apple.com/shop/buy-watch/apple-watch" target="_blank">Apple.com</a><br>$369.00</td>
+                                <td width="25%"><a href="http://www.apple.com/nl/shop/buy-watch/apple-watch" target="_blank">Apple.nl</a><br>€ 439,00</td>
+                                <td width="25%"><a href="http://www.apple.com/uk/shop/buy-watch/apple-watch" target="_blank">Apple.uk</a><br>£369.00</td>
+                                <td width="25%"><a href="http://www.apple.com/de/shop/buy-watch/apple-watch" target="_blank">Apple.de</a><br>€ 419,00</td>
                             </tr>
                             <tr>
-                                <td colspan="4" width="100%"><a href="http://www.apple.com/cz/iphone-7/" target="_blank">Apple.cz</a></td>
+                                <td colspan="4" width="100%"><a href="http://www.apple.com/cz/shop/buy-watch/apple-watch" target="_blank">Apple.cz</a><br>11 290 Kč</td>
+                            </tr>
+                        </table>
+                    </div>
+                </li>
+                
+                <li>
+                    <div id="card_title">
+                        <p id="item_name">AirPods</p>
+                        <p id="item_price">4 840 Kč</p>
+                        <p id="item_price2">cheapest in NL & DE</p>
+                    </div>
+                    <div id="card_image">
+                        <img src="Media/ShoppingList/AirPods.png">
+                    </div>
+                    <div id="card_box">
+                        <p id="card_box_title">Specs</p>
+                        <table>
+                            <tr>
+                                <td id="left">Technical</td><td id="right">
+                                - 5h of playback<br>
+                                - case is also powerbank<br>
+                                - 24h playback if case charged<br>
+                                - no pairing</td>
+                            </tr>
+                        </table>
+                        <br>
+                        
+                        <p id="card_box_title">Availability</p>
+                        <table>
+                            <tr>
+                                <td id="left">NL & CZ</td><td id="right">late October</td>
+                            </tr>
+                            <tr>
+                                <td id="left">+</td><td id="right">right after I save enough money</td>
+                            </tr>
+                        </table>
+                        <br>
+                        
+                        <p id="card_box_title">Reason</p>
+                        <table>
+                            <tr>
+                                <td id="left">Why do I want it?</td><td id="right">
+                                - wireless<br>
+                                - good for excercise<br></td>
+                            </tr>
+                        </table>
+                        <br>
+                        
+                        <p id="card_box_title">Money</p>
+                        <table>
+                            <tr>
+                                <td width="33%"> Total<br>4990 Kč</td><td width="33%">Prepared<br>0 Kč</td><td width="33%">Left<br>4990Kč</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <table>
+                            <tr>
+                                <td id="left">Tip</td><td id="right">In Europe you can save cca 5.5€ if you purchase this item in Netherlands or Germany</td>
+                            </tr>
+                        </table>
+                        <br>
+                        
+                        <p id="card_box_title">Links</p>
+                        <table>
+                            <tr>
+                                <td width="25%"><a href="http://www.apple.com/airpods/" target="_blank">Apple.com</a><br>$159.00</td>
+                                <td width="25%"><a href="http://www.apple.com/nl/airpods/" target="_blank">Apple.nl</a><br>€ 179,00</td>
+                                <td width="25%"><a href="http://www.apple.com/uk/airpods/" target="_blank">Apple.uk</a><br>£159.00</td>
+                                <td width="25%"><a href="http://www.apple.com/de/airpods/" target="_blank">Apple.de</a><br>€ 179,00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" width="100%"><a href="http://www.apple.com/cz/airpods/" target="_blank">Apple.cz</a><br>4 990 Kč</td>
                             </tr>
                         </table>
                     </div>
