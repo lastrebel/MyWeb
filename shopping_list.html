@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            /* scrollbar */
+            #horizontal_scrollbar {
+                background:#f2f2f2;
+                min-height: 300px;
+                width: 100%;
+                margin: 0px auto;
+                overflow: auto;
+                white-space: nowrap;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+            }
+            #horizontal_title {
+                background:#f2f2f2;
+                width: 100%;
+                margin: 0px auto;
+                line-height: 60px; font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                font-size: 20px;
+                text-align: center;
+                color: lightgrey;
+            }
+            
+           /* master card */ 
+            li {
+                background: white;
+                width: 300px;
+                height: 450px;
+                display: inline-block;
+                vertical-align:top;
+                box-shadow: 0px 0.5px 2px 0.5px #cfcfcf;
+                border-radius: 2px;
+                white-space:normal;
+                font-family: 'Lato', sans-serif;
+                font-weight: 100;
+                text-align: center;
+                margin: 0px auto;
+                position: relative;
+                left: -20px;
+            }
+            
+            
+            #card_title {
+                background: #eaeaea;
+                width: 100%;
+                position: absolute;
+                height: 60px;
+                top:0px;
+                vertical-align: bottom;
+                border-radius: 2px 2px 0px 0px;
+            }
+            #card_image {
+                background: #eaeaea;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                bottom: 220px;
+                padding: 20px 0px;
+                box-shadow: 0px -15px 10px -10px #cfcfcf inset;
+            }
+            #card_box {
+                background: ;
+                height: 200px;
+                width: 100%;
+                position: absolute;
+                bottom:0px;
+                overflow: auto;
+                border-radius: 0px 0px 2px 2px;
+                font-weight: 300;
+                font-size: 14px;
+                margin: 10px auto;
+            }
+        
+            
+            /* card general font settings */ 
+            li {
+                font-size: 15px;
+                font-weight: 400;
+                color: ;
+            }
+            p {
+                margin:0;
+            }
+            a {
+                color: red;
+                text-decoration:underline;
+                text-decoration-color: red;
+            }
+            
+            /* card_title font settings */
+            #item_name {
+                font-size: 17px;
+                margin-top: 10px;
+            }
+            #item_price {
+                color: gray;
+                font-size: 10px;
+            }
+            #item_price2 {
+                color: gray;
+                font-size: 10px;
+            }
+            
+            /* card_image settings */
+            img {
+                max-width:90%;
+                max-height:100%;
+            }
+            
+            /* card_box font settings */
+            #card_box_title {
+                width: 90%;
+                margin: auto;
+                padding-left: 10px;
+                opacity: 0.5;
+                font-size: 14px;
+                font-weight: 300;
+                border-bottom: solid;
+                border-width: 3px;
+                line-height: 25px;
+                /**/
+                border-color:#eaeaea;
+                margin-bottom: 5px;
+                padding: 0;
+            }
+            #left {
+                min-width:100px;
+                width: 30%;
+                text-align: right;
+                opacity: 0.5;
+                vertical-align: text-top;
+            }
+            #right {
+                text-align: left;
+                padding-left: 10px;
+                margin: 10px;
+            }
+            table {
+                width: 100%;
+            }
+            
+            #links {
+                width: 80%;
+            }
+            
+            
+        </style>
+    </head>
+    
+    <body>
+        <div id="horizontal_title">Electronics</div>
+        <div id="horizontal_scrollbar">
+            <ul>
+                <li>
+                    <div id="card_title">
+                        <p id="item_name">iPhone 7</p>
+                        <p id="item_price">23 487 Kč</p>
+                        <p id="item_price2">869 €</p>
+                    </div>
+                    <div id="card_image">
+                        <img src="Media/ShoppingList/iphone7.png">
+                    </div>
+                    <div id="card_box">
+                        <p id="card_box_title">Specs</p>
+                        <table>
+                            <tr>
+                                <td id="left">Storage</td><td id="right">128GB</td>
+                            </tr>
+                            <tr>
+                                <td id="left">Color</td><td id="right">mate black</td>
+                            </tr>
+                            <tr>
+                                <td id="left">Release</td><td id="right">16 September 2016</td>
+                            </tr>
+                        </table>
+                        
+                        <br>
+                        <p id="card_box_title">Reason why do I want it?</p>
+                        <table>
+                            <tr>
+                                <td id="left">Why do I want it?</td><td id="right">Because I was waiting since March and I have saved many money.</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <p id="card_box_title">Money</p>
+                        <table>
+                            <tr>
+                                <td width="33%"> Total<br>23487 Kč</td><td width="33%">Prepared<br>15000 Kč</td><td width="33%">Left<br>8487Kč</td>
+                            </tr>
+                        </table>
+                        
+                        <br>
+                        <p id="card_box_title">Links</p>
+                        <table>
+                            <tr>
+                                <td width="25%"><a href="http://www.apple.com/iphone-7/" target="_blank">Apple.com</a></td>
+                                <td width="25%"><a href="http://www.apple.com/nl/iphone-7/" target="_blank">Apple.nl</a></td>
+                                <td width="25%"><a href="http://www.apple.com/uk/iphone-7/" target="_blank">Apple.uk</a></td>
+                                <td width="25%"><a href="http://www.apple.com/de/iphone-7/" target="_blank">Apple.de</a></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" width="100%"><a href="http://www.apple.com/cz/iphone-7/" target="_blank">Apple.cz</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </li>
+                
+            </ul> 
+        </div>
+    </body>
+</html>

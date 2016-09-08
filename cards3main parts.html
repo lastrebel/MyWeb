@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+            }
+            
+            /* scrollbar */
+            #horizontal_scrollbar {
+                background:#f2f2f2;
+                min-height: 300px;
+                width: 100%;
+                margin: 0px auto;
+                overflow: auto;
+                white-space: nowrap;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+            }
+            #horizontal_title {
+                background:#f2f2f2;
+                width: 100%;
+                margin: 0px auto;
+                line-height: 60px; font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                font-size: 20px;
+                text-align: center;
+                color: lightgrey;
+            }
+            
+           /* card */ 
+            li {
+                background: white;
+                width: 300px;
+                height: 300px;
+                display: inline-block;
+                vertical-align:top;
+                box-shadow: 0px 0.5px 2px 0.5px #cfcfcf;
+                border-radius: 20px;
+                white-space:normal;
+                font-family: 'Lato', sans-serif;
+                font-weight: 100;
+                text-align: center;
+                margin: 0px auto;
+                position: relative;
+                left: -20px;
+            }
+            /* card font settings */ 
+            li {
+                font-size: 15px;
+                font-weight: 400;
+                color: ;
+            }
+            
+            #card_title {
+                background: yellow;
+                width: 100%;
+                position: absolute;
+                height: 40px;
+                top:0px;
+                vertical-align: bottom; 
+            }
+            #card_image {
+                background: blue;
+                width: 100%;
+                position: absolute;
+                top: 40px;
+                bottom: 150px
+            }
+            #card_box {
+                background: red;
+                height: 150px;
+                width: 100%;
+                position: absolute;
+                bottom:0px;
+                overflow: auto;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="horizontal_title">Horizontal Container</div>
+        <div id="horizontal_scrollbar">
+            <ul>
+                <li>
+                    <div id="card_title">card 1<br>second line</div>
+                    <div id="card_image">media</div>
+                    <div id="card_box">insidecard_box</div>
+                </li>
+                <li>
+                    <div id="card_title">card 2</div>
+                    <div id="card_image">media</div>
+                    <div id="card_box">insidecard_box</div>
+                </li>
+                <li>
+                    <div id="card_title">card 3</div>
+                    <div id="card_image">media</div>
+                    <div id="card_box">insidecard_box</div>
+                </li>
+                <li>
+                    <div id="card_title">card 4</div>
+                    <div id="card_image">media</div>
+                    <div id="card_box">insidecard_box</div>
+                </li>
+            </ul> 
+        </div>
+    </body>
+</html>

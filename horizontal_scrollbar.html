@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+        <style>
+            body {margin:0;}
+            #horizontal_scrollbar {
+                background:#f2f2f2;
+                min-height: 300px;
+                width: 100%;
+                margin: 0px auto;
+                overflow: auto;
+                white-space: nowrap;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+            }
+            #horizontal_title {
+                background:#f2f2f2;
+                width: 100%;
+                margin: 0px auto;
+                line-height: 60px; font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                font-size: 20px;
+                text-align: center;
+                color: lightgrey;
+            }
+            
+            li {
+                background: white;
+                margin: 2px;
+                width: 300px;
+                height: 300px;
+                display: inline-block;
+                vertical-align:top;
+                box-shadow: 0px 0.5px 2px 0.5px #cfcfcf;
+                border-radius: 2px;
+                white-space:normal;
+                font-family: 'Lato', sans-serif;
+                font-weight: 100;
+                text-align: center;
+                margin: 0px auto;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="horizontal_title">Horizontal Container</div>
+        <div id="horizontal_scrollbar">
+            <ul>
+                <li>
+                    <div id="card">card 1</div>
+                </li>
+                <li>
+                    <div id="card">card 1</div>
+                </li>
+                <li>
+                    <div id="card">card 1</div>
+                </li>
+                <li>
+                    <div id="card">card 1</div>
+                </li>
+            </ul> 
+        </div>
+    </body>
+</html>
