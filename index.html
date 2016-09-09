@@ -5,6 +5,467 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
         <style>
             body {
+                margin: 0;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            /* scrollbar */
+            #horizontal_scrollbar {
+                background:#f2f2f2;
+                min-height: 300px;
+                width: 100%;
+                margin: 0px auto;
+                overflow: auto;
+                white-space: nowrap;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+            }
+            #horizontal_title {
+                background:#f2f2f2;
+                width: 100%;
+                margin: 0px auto;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                line-height: 40px; font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                font-size: 20px;
+                text-align: center;
+                color: lightgrey;
+            }
+            
+           /* card */ 
+            li {
+                background: white;
+                width: 600px;
+                min-height: 600px;
+                display: inline-block;
+                vertical-align:top;
+                box-shadow: 0px 0.5px 2px 0.5px #cfcfcf;
+                border-radius: 2px;
+                white-space:normal;
+                font-family: 'Lato', sans-serif;
+                font-weight: 100;
+                text-align: center;
+                margin: 0px 5px;
+                position: relative;
+                left: -20px;
+            }
+            #card_coderaw {
+                background: #eaeaea;
+                width: 100%;
+                height: 300px;
+                position: absolute;
+                top:0px;
+                border-radius: 2px 2px 0px 0px;
+                box-shadow: 0px -15px 10px -10px #cfcfcf inset;
+            }
+            #card_codepreview {
+                background: #fbfbfb;
+                width: 100%;
+                height: 300px;
+                position: absolute;
+                bottom:0px;
+                border-radius: 0px 0px 2px 2px;
+            }
+            textarea {
+                opacity: 0.8;
+                margin: 10px;
+                width: 95%;
+                height: 235px;
+            }
+            img {
+                height: 100%;
+                border-left: solid;
+                border-right: solid;
+                border-width: 1px;
+                border-color: lightgray;
+            }
+            
+            /* card font settings */ 
+            li {
+                font-size: 15px;
+                font-weight: 400;
+                color: ;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <button style="display:block;margin:10px auto"><a href="index.html">Refresh</a></button>
+        <center>
+        <div id="horizontal_title">Whats in this repository<br>
+        MyWeb</div>
+        <div id="horizontal_scrollbar">
+            <ul>
+                <li>
+                    <div id="card_coderaw">file 1<br>
+                        <button><a href="sceleton.html">sceleton.html</a></button>
+                        <textarea rows="5" readonly>
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                -webkit-overflow-scrolling: touch;
+            }
+        </style>
+    </head>
+    
+    <body>
+    </body>
+</html>
+-->
+                        </textarea>
+                    </div>
+                    <div id="card_codepreview">
+                        <img src="Media/Index/card_codepreviews/sceleton.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div id="card_coderaw">file 2<br>
+                        <button><a href="index_template.html">index_template.html</a></button>
+                        <textarea rows="5" readonly>
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+            }
+            
+            /* scrollbar */
+            #horizontal_scrollbar {
+                background:#f2f2f2;
+                min-height: 300px;
+                width: 100%;
+                margin: 0px auto;
+                overflow: auto;
+                white-space: nowrap;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+            }
+            #horizontal_title {
+                background:#f2f2f2;
+                width: 100%;
+                margin: 0px auto;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                line-height: 40px; font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                font-size: 20px;
+                text-align: center;
+                color: lightgrey;
+            }
+            
+           /* card */ 
+            li {
+                background: white;
+                width: 600px;
+                min-height: 600px;
+                display: inline-block;
+                vertical-align:top;
+                box-shadow: 0px 0.5px 2px 0.5px #cfcfcf;
+                border-radius: 2px;
+                white-space:normal;
+                font-family: 'Lato', sans-serif;
+                font-weight: 100;
+                text-align: center;
+                margin: 0px 5px;
+                position: relative;
+                left: -20px;
+            }
+            #card_coderaw {
+                background: #eaeaea;
+                width: 100%;
+                height: 300px;
+                position: absolute;
+                top:0px;
+                border-radius: 2px 2px 0px 0px;
+                box-shadow: 0px -15px 10px -10px #cfcfcf inset;
+            }
+            #card_codepreview {
+                background: #fbfbfb;
+                width: 100%;
+                height: 300px;
+                position: absolute;
+                bottom:0px;
+                border-radius: 0px 0px 2px 2px;
+            }
+            textarea {
+                opacity: 0.8;
+                margin: 10px;
+                width: 95%;
+                height: 235px;
+            }
+            img {
+                height: 100%;
+                border-left: solid;
+                border-right: solid;
+                border-width: 1px;
+                border-color: lightgray;
+            }
+            
+            /* card font settings */ 
+            li {
+                font-size: 15px;
+                font-weight: 400;
+                color: ;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <center>
+        <div id="horizontal_title">Whats in this repository<br>
+        MyWeb</div>
+        <div id="horizontal_scrollbar">
+            <ul>
+                <li>
+                    <div id="card_coderaw">file<br>filename.html
+!!!code snippet will not be parsed in textarea rows value readonly
+                    </div>
+                    <div id="card_codepreview">
+                        <img src="Media/Index/" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div id="card_coderaw">file<br>filename.html
+!!!code snippet will not be parsed in textarea rows value readonly
+                    </div>
+                    <div id="card_codepreview">
+                        <img src="Media/Index/" alt="">
+                    </div>
+                </li>
+            </ul> 
+        </div>
+    </center>
+    </body>
+</html>
+-->
+                        </textarea>
+                    </div>
+                    <div id="card_codepreview">
+                        <img src="Media/Index/card_codepreviews/index_template.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div id="card_coderaw">file 3<br>
+                        <button><a href="cards3main_parts.html">cards3main_parts.html</a></button>
+                        <textarea rows="5" readonly>
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+            }
+            
+            /* scrollbar */
+            #horizontal_scrollbar {
+                background:#f2f2f2;
+                min-height: 300px;
+                width: 100%;
+                margin: 0px auto;
+                overflow: auto;
+                white-space: nowrap;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+            }
+            #horizontal_title {
+                background:#f2f2f2;
+                width: 100%;
+                margin: 0px auto;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                line-height: 40px; font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                font-size: 20px;
+                text-align: center;
+                color: lightgrey;
+            }
+            
+           /* card */ 
+            li {
+                background: white;
+                width: 300px;
+                height: 300px;
+                display: inline-block;
+                vertical-align:top;
+                box-shadow: 0px 0.5px 2px 0.5px #cfcfcf;
+                border-radius: 20px;
+                white-space:normal;
+                font-family: 'Lato', sans-serif;
+                font-weight: 100;
+                text-align: center;
+                margin: 0px auto;
+                position: relative;
+                left: -20px;
+            }
+            /* card font settings */ 
+            li {
+                font-size: 15px;
+                font-weight: 400;
+                color: ;
+            }
+            
+            #card_title {
+                background: yellow;
+                width: 100%;
+                position: absolute;
+                height: 40px;
+                top:0px;
+                vertical-align: bottom; 
+            }
+            #card_image {
+                background: blue;
+                width: 100%;
+                position: absolute;
+                top: 40px;
+                bottom: 150px
+            }
+            #card_box {
+                background: red;
+                height: 150px;
+                width: 100%;
+                position: absolute;
+                bottom:0px;
+                overflow: auto;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="horizontal_title">Horizontal Container</div>
+        <div id="horizontal_scrollbar">
+            <ul>
+                <li>
+                    <div id="card_title">card 1<br>second line</div>
+                    <div id="card_image">media</div>
+                    <div id="card_box">insidecard_box</div>
+                </li>
+                <li>
+                    <div id="card_title">card 2</div>
+                    <div id="card_image">media</div>
+                    <div id="card_box">insidecard_box</div>
+                </li>
+                <li>
+                    <div id="card_title">card 3</div>
+                    <div id="card_image">media</div>
+                    <div id="card_box">insidecard_box</div>
+                </li>
+                <li>
+                    <div id="card_title">card 4</div>
+                    <div id="card_image">media</div>
+                    <div id="card_box">insidecard_box</div>
+                </li>
+            </ul> 
+        </div>
+    </body>
+</html>
+-->
+                        </textarea></div>
+                    <div id="card_codepreview">
+                        <img src="Media/Index/card_codepreviews/cards3main_parts" alt="cards3main_parts">
+                    </div>
+                </li>
+                <li>
+                    <div id="card_coderaw">file 4<br>
+                        <button><a href="horizontal_scrollbar.html">horizontal_scrollbar.html</a></button>
+                        <textarea rows="5" readonly>
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+        <style>
+            body {margin:0;}
+            #horizontal_scrollbar {
+                background:#f2f2f2;
+                min-height: 300px;
+                width: 100%;
+                margin: 0px auto;
+                overflow: auto;
+                white-space: nowrap;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+            }
+            #horizontal_title {
+                background:#f2f2f2;
+                width: 100%;
+                margin: 0px auto;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                line-height: 40px; font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                font-size: 20px;
+                text-align: center;
+                color: lightgrey;
+            }
+            
+            li {
+                background: white;
+                margin: 2px;
+                width: 300px;
+                height: 300px;
+                display: inline-block;
+                vertical-align:top;
+                box-shadow: 0px 0.5px 2px 0.5px #cfcfcf;
+                border-radius: 2px;
+                white-space:normal;
+                font-family: 'Lato', sans-serif;
+                font-weight: 100;
+                text-align: center;
+                margin: 0px auto;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="horizontal_title">Horizontal Container</div>
+        <div id="horizontal_scrollbar">
+            <ul>
+                <li>
+                    <div id="card">card 1</div>
+                </li>
+                <li>
+                    <div id="card">card 1</div>
+                </li>
+                <li>
+                    <div id="card">card 1</div>
+                </li>
+                <li>
+                    <div id="card">card 1</div>
+                </li>
+            </ul> 
+        </div>
+    </body>
+</html>
+-->
+                        </textarea>
+                    </div>
+                    <div id="card_codepreview">
+                        <img src="Media/Index/card_codepreviews/horizontal_scrollbar.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div id="card_coderaw">file 5<br>
+                        <button><a href="shopping_list.html">shoppingList.html</a></button>
+                        <textarea rows="5" readonly>
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+        <style>
+            body {
                 margin: 0 auto;
                 -webkit-overflow-scrolling: touch;
             }
@@ -162,7 +623,6 @@
     </head>
     
     <body>
-        <button style="display:block;margin:10px auto"><a href="index.html">index.html</a></button>
         <center>
         <div id="horizontal_title">Shopping list<br></div>
         <div id="horizontal_scrollbar">
@@ -472,5 +932,18 @@
             </ul> 
         </div>
         </center>
+    </body>
+</html>
+
+-->
+                        </textarea>
+                    </div>
+                    <div id="card_codepreview">
+                        <img src="Media/Index/card_codepreviews/shopping_list.jpg" alt="">
+                    </div>
+                </li>
+            </ul> 
+        </div>
+    </center>
     </body>
 </html>
