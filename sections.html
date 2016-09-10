@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+        <style>
+            /* GENERAL */
+            body {
+                margin:0;
+                -webkit-overflow-scrolling: touch;
+            }
+            li {
+                background: white;
+                margin: 2px;
+                width: 300px;
+                min-height: 300px;
+                max-height: 700px;
+                display: inline-block;
+                vertical-align:top;
+                box-shadow: 0px 0.5px 2px 0.5px #cfcfcf;
+                border-radius: 2px;
+                white-space:normal;
+                font-family: 'Lato', sans-serif;
+                font-weight: 100;
+                text-align: center;
+                margin: 0px 5px;
+            }
+            a {
+                color: #aaa;
+            }
+            
+            /* HORIZONTAL VIEWPORT */
+            #horizontal_scrollbar {
+                background:#f2f2f2;
+                min-height: 300px;
+                width: 100%;
+                margin: 0px auto;
+                overflow: auto;
+                white-space: nowrap;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+            }
+            #horizontal_title {
+                background:#f2f2f2;
+                width: 100%;
+                margin: 0px auto;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                line-height: 40px; font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                font-size: 20px;
+                text-align: center;
+                color: lightgrey;
+            }
+            #card_container {
+                background:#fbfbfb;
+                width:300px;
+                min-height:300px;
+                border: 1px solid #a0cc42;
+                border-radius: 2px;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <button style="display:block;margin:10px auto"><a href="index.html">back to index.html</a></button>
+        <center>
+            <button style="margin:10px 0"><a href="#card1">card1</a></button>
+            <button><a href="#card2">card2</a></button>
+            <button><a href="#card3">card3</a></button>
+            <button><a href="#card4">card4</a></button>
+            <button><a href="#card5">card5</a></button>
+            
+            
+            <div id="horizontal_title">Sections<br>
+                - cards are wrapped in section tag<br>
+                - buttons are linked to these sections</div>
+            <div id="horizontal_scrollbar">
+                <ul>
+                    <li>
+                        <section id="card1">
+                            <div id="card_container">card 1</div>
+                        </section>
+                    </li>
+                    <li>
+                        <section id="card2">
+                            <div id="card_container">card 2</div>
+                        </section>
+                    </li>
+                    <li>
+                        <section id="card3">
+                            <div id="card_container">card 3</div>
+                        </section>
+                    </li>
+                    <li>
+                        <section id="card4">
+                        <div id="card_container">card 4</div>
+                        </section>
+                    </li>
+                    <li>
+                        <section id="card5">
+                        <div id="card_container">card 5</div>
+                        </section>
+                    </li>
+                </ul> 
+            </div>
+        </center>
+    </body>
+</html>

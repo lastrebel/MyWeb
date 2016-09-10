@@ -7,6 +7,9 @@
             body {
                 -webkit-overflow-scrolling: touch;
             }
+            .fontred {
+                color:#FFAAAA;
+            }
             
             /* CARD */
             #card_container {
@@ -16,7 +19,7 @@
                 border: 1px solid #a0cc42;
                 border-radius: 2px;
             }
-            #card_primarytitle,#card_secondarytitle {
+            #card_primarytitle,#card_secondarytitle,#card_instruction,#card_instruction2do,#list_name {
                 color: #a0cc42;
                 font-family: 'Lato', sans-serif;
                 font-weight: 300;
@@ -31,13 +34,34 @@
             #card_secondarytitle {
                 font-size: 15px;
             }
-            
+            #card_instruction {
+                font-size: 10px;
+                color: lightgray;
+                line-height: 11px;
+            }
+            #card_instruction2do {
+                font-size: 15px;
+                color: lightgray;
+                line-height: 20px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #a0cc42;
+            }
+            #list_name {
+                font-size: 10px;
+                color: green;
+                line-height: 22px;
+                background-color: #a0cc42;
+            }
+            .strikethrough {
+                text-decoration: line-through;
+            }
             /* CONTENT rows */
             #list {
                 width: 95%;
                 border-collapse: collapse;
                 font-family: 'Lato', sans-serif;
-                font-weight: 300;
+                font-weight:300;
+                color: gray;
             }
             #list_row {
                 border-bottom: 1px solid #d9ebb3;
@@ -77,135 +101,84 @@
     
     <body>
         <center>
-        <button style="display:block;margin:10px auto"><a href="index.html">back to index.html</a></button>
-        <div id="card_container">
-            <center>
-            <p id="card_primarytitle">10.9. 16</p>
-            <p id="card_secondarytitle">Saturday</p>
-            <table id="list">
-                <tr><td><br></td></tr>
-                <tr id="list_row">
-                    <td id="item">vstal</td><td id="time">10:00</td><td class="completition done"> </td>
-                </tr>
-                <tr id="list_row">
-                    <td id="item">hygiena</td><td id="time"></td><td class="completition done"> </td>
-                </tr>
-                <tr id="list_row">
-                    <td id="item">eyedrops</td><td id="time"></td><td class="completition done"> </td>
-                </tr>
-                <tr id="list_row">
-                    <td id="item">social:imsg >vera >zrusil Karlstejn</td><td id="time"></td><td class="completition done"> </td>
-                </tr>
-                <tr id="list_row">
-                    <td id="item">F&D: breakfast ready (1banana, 2eggs, 1tbs flower)</td><td id="time"></td><td class="completition done"> </td>
-                </tr>
-                <tr id="list_row">
-                    <td id="item">F&D: ate breakfast 4/5</td><td id="time"></td><td class="completition done"> </td>
-                </tr>
-                <tr id="list_row">
-                    <td id="item">social:talk Theo</td><td id="time"></td><td class="completition done"> </td>
-                </tr>
-                <tr id="list_row" class="no_bottom_border">
-                    <td id="item">prepared for gym + sauna</td><td id="time"></td><td class="completition done"> </td>
-                </tr>
-                
+            <button style="display:block;margin:10px auto"><a href="index.html">back to index.html</a></button>
+            <div id="card_container">
+                <center>
+                    <p id="card_primarytitle">dd.m.yy</p>
+                    <p id="card_secondarytitle">DAYNAME</p>
+                    <p id="card_instruction">Try your best today<br>do at least following:</p>
+                    <p id="card_instruction2do">
+                        <span class="fontred no_bottom_border">reminder: smtn all day important go here</span><br><br>
 
-                <tr><td><br></td></tr>
-                <tr id="list_row">
-                    <td id="item">Gym (4 machines) + maser</td><td id="time">11:50</td><td class="completition done"> </td>
-                </tr>
-                <tr id="list_row">
-                    <td id="item">Sauna (1x dry, 2x steam)</td><td id="time"></td><td class="completition done"> </td>
-                </tr>
-                <tr id="list_row">
-                    <td id="item">money: bageterie, 39Kc(cc)</td><td id="time"></td><td class="completition done"> </td>
-                </tr>
-                <tr id="list_row">
-                    <td id="item">F&D: sweet chilli</td><td id="time"></td><td class="completition done"> </td>
-                </tr>
-                <tr id="list_row" class="no_bottom_border">
-                    <td id="item">money: Tesco My, 209,12kc(cc)</td><td id="time"></td><td class="completition done"> </td>
-                </tr>
-                
-                
-                <tr><td><br></td></tr>
-                <tr id="list_row">
-                    <td id="item">unpacked after gym, sort groceries</td><td id="time">14:30</td><td class="completition done"> </td>
-                </tr>
-                <tr id="list_row">
-                    <td id="item">F&D: finished breakfast +1/5</td><td id="time"></td><td class="completition done"> </td>
-                </tr>
-                <tr id="list_row">
-                    <td id="item">cleaned dishes</td><td id="time"></td><td class="completition done"> </td>
-                </tr>
-                <tr id="list_row">
-                    <td id="item">Laundry: loaded & started</td><td id="time"></td><td class="completition "> </td>
-                </tr>
-                <tr id="list_row">
-                    <td id="item">hobby:pc finished list.html</td><td id="time">17:36</td><td class="completition done"> </td>
-                </tr>
-                <tr id="list_row" class="no_bottom_border">
-                    <td id="item">hobby:pc test and fix of list.html</td><td id="time">18:00</td><td class="completition done"> </td>
-                </tr>
-                
-                
-                <tr><td><br></td></tr>
-                <tr id="list_row">
-                    <td id="item">money: Dhabas, 87Kc (ca)</td><td id="time"></td><td class="completition done"> </td>
-                </tr>
-                <tr id="list_row">
-                    <td id="item">F&D ate soup and small dish @ dhaba</td><td id="time"></td><td class="completition done"> </td>
-                </tr>
-                <tr id="list_row" class="no_bottom_border">
-                    <td id="item">walk around Marathon edition event on Wencesslass square</td><td id="time"></td><td class="completition done"> </td>
-                </tr>
-                
-                <tr><td><br></td></tr>
-                <tr id="list_row">
-                    <td id="item">vyvoriť today.html (use list.html)</td><td id="time">19:45</td><td class="completition done"> </td>
-                </tr>
-                
-                <tr><td><br></td></tr>
-                <tr id="list_row">
-                    <td id="item">money: exchange 65gbp>2080czk</td><td id="time"></td><td class="completition done"> </td>
-                </tr>
-                <tr id="list_row">
-                    <td id="item">kúp 2g (600)</td><td id="time"></td><td class="completition"> </td>
-                </tr>
-                <tr><td><br></td></tr>
-                <tr id="list_row">
-                    <td id="item">Laundry: hang it</td><td id="time"></td><td class="completition"> </td>
-                </tr>
-                <tr id="list_row">
-                    <td id="item">utri stôl v izbe, je od vosku</td><td id="time"></td><td class="completition"> </td>
-                </tr>
-                <tr id="list_row">
-                    <td id="item">ulož kabáty</td><td id="time"></td><td class="completition"> </td>
-                </tr>
-                <tr id="list_row">
-                    <td id="item">roztrieď bločky</td><td id="time"></td><td class="completition"> </td>
-                </tr>
-                <tr id="list_row">
-                    <td id="item">rozstrihaj kartóny, použi a zahoď</td><td id="time"></td><td class="completition"> </td>
-                </tr>
-                
-                
-                
-                
-                
-                
-                <!--
-                <tr id="list_row" class="no_bottom_border">
-                    <td id="item">eyedrops</td><td id="time"></td><td class="completition done"> </td>
-                </tr>
-                -->
-                
-                
-                
-                
-            </table>
-            </center>
-        </div>
+                        start: any good way to start a day<br>
+                        sport: any physical activity<br>
+                        productivity: hobby or work (paid)<br>
+                        social: who do you need to contact<br>
+                        relax: how do you want to relax today
+                    </p>
+
+                    <table id="list">
+                        <tr><td><br></td></tr>
+                        <tr id="list_row">
+                            <td id="item">vstal</td><td id="time"></td><td class="completition"> </td>
+                        </tr>
+                        <tr id="list_row">
+                            <td id="item">hygiena</td><td id="time"></td><td class="completition"> </td>
+                        </tr>
+                        <tr id="list_row">
+                            <td id="item">eyedrops</td><td id="time"></td><td class="completition"> </td>
+                        </tr>
+                        <tr id="list_row">
+                            <td id="item">F&D: prepare breakfast</td><td id="time"></td><td class="completition"> </td>
+                        </tr>
+                        <tr id="list_row">
+                            <td id="item">F&D: eat breakfast </td><td id="time"></td><td class="completition"> </td>
+                        </tr>
+
+                        <tr id="list_row" class="no_bottom_border">
+                            <td id="item">prepared for gym + sauna</td><td id="time"></td><td class="completition"> </td>
+                        </tr>
+                    </table>
+
+
+
+                    <p id="list_name">To-Dos added today</p>
+                    <table id="list">
+                        <tr id="list_row">
+                            <td id="item">+ new to do</td><td id="time"></td><td class="completition"> </td>
+                        </tr>
+                    </table>
+
+                    <p id="list_name">To-Dos from previous days</p>
+                    <table id="list">
+                        <tr id="list_row">
+                            <td id="item">1 old to do</td><td id="time"></td><td class="completition"> </td>
+                        </tr>
+                        <tr id="list_row">
+                            <td id="item">2 old to do</td><td id="time"></td><td class="completition"> </td>
+                        </tr>
+                        <tr id="list_row" class="no_bottom_border">
+                            <td id="item">3 old to do</td><td id="time"></td><td class="completition"> </td>
+                        </tr>
+                    </table>
+
+                    <p id="list_name">REPORTS TODAY</p>
+                    <table id="list">
+                        <tr id="list_row" class="fontred no_bottom_border">
+                            <td id="item">- if you fail, set color:red</td><td id="time">all day</td><td class="completition"> </td>
+                        </tr>
+                        <tr id="list_row">
+                            <td id="item">1. here list your day goals from top part of this card</td><td id="time">morning</td><td class="completition done"> </td>
+                        </tr>
+                        <tr id="list_row">
+                            <td id="item">2. set related day part (optional) in 2nd column</td><td id="time">main part</td><td class="completition done"> </td>
+                        </tr>
+                        <tr id="list_row" class="no_bottom_border">
+                            <td id="item">3. set done or undone, whether you succeded or failed with a goal</td><td id="time">main part</td><td class="completition done"> </td>
+                        </tr>
+                    </table>
+                </center>
+            </div>
         </center>
     </body>
 </html>

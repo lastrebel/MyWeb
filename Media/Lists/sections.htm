@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html data-brackets-id='28970'>
+    <head data-brackets-id='28971'>
+         <link data-brackets-id='28972' href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+        <style data-brackets-id='28973'>
+            /* GENERAL */
+            body {
+                margin:0;
+                -webkit-overflow-scrolling: touch;
+            }
+            li {
+                background: white;
+                margin: 2px;
+                width: 300px;
+                min-height: 300px;
+                max-height: 700px;
+                display: inline-block;
+                vertical-align:top;
+                box-shadow: 0px 0.5px 2px 0.5px #cfcfcf;
+                border-radius: 2px;
+                white-space:normal;
+                font-family: 'Lato', sans-serif;
+                font-weight: 100;
+                text-align: center;
+                margin: 0px 5px;
+            }
+            a {
+                color: #aaa;
+            }
+            
+            /* HORIZONTAL VIEWPORT */
+            #horizontal_scrollbar {
+                background:#f2f2f2;
+                min-height: 300px;
+                width: 100%;
+                margin: 0px auto;
+                overflow: auto;
+                white-space: nowrap;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+            }
+            #horizontal_title {
+                background:#f2f2f2;
+                width: 100%;
+                margin: 0px auto;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                line-height: 40px; font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                font-size: 20px;
+                text-align: center;
+                color: lightgrey;
+            }
+            #card_container {
+                background:#fbfbfb;
+                width:300px;
+                min-height:300px;
+                border: 1px solid #a0cc42;
+                border-radius: 2px;
+            }
+            
+        </style>
+    </head>
+    
+    <body data-brackets-id='28974'>
+        <button data-brackets-id='28975' style="display:block;margin:10px auto"><a data-brackets-id='28976' href="index.html">back to index.html</a></button>
+        <center data-brackets-id='28977'>
+            <button data-brackets-id='28978' style="margin:10px 0"><a data-brackets-id='28979' href="#card1">card1</a></button>
+            <button data-brackets-id='28980'><a data-brackets-id='28981' href="#card2">card2</a></button>
+            <button data-brackets-id='28982'><a data-brackets-id='28983' href="#card3">card3</a></button>
+            <button data-brackets-id='28984'><a data-brackets-id='28985' href="#card4">card4</a></button>
+            <button data-brackets-id='28986'><a data-brackets-id='28987' href="#card5">card5</a></button>
+            
+            
+            <div data-brackets-id='28988' id="horizontal_title">Sections<br data-brackets-id='28989'>
+                - cards are wrapped in section tag<br data-brackets-id='28990'>
+                - buttons are linked to these sections</div>
+            <div data-brackets-id='28991' id="horizontal_scrollbar">
+                <ul data-brackets-id='28992'>
+                    <li data-brackets-id='28993'>
+                        <section data-brackets-id='28994' id="card1">
+                            <div data-brackets-id='28995' id="card_container">card 1</div>
+                        </section>
+                    </li>
+                    <li data-brackets-id='28996'>
+                        <section data-brackets-id='28997' id="card2">
+                            <div data-brackets-id='28998' id="card_container">card 2</div>
+                        </section>
+                    </li>
+                    <li data-brackets-id='28999'>
+                        <section data-brackets-id='29000' id="card3">
+                            <div data-brackets-id='29001' id="card_container">card 3</div>
+                        </section>
+                    </li>
+                    <li data-brackets-id='29002'>
+                        <section data-brackets-id='29003' id="card4">
+                        <div data-brackets-id='29004' id="card_container">card 4</div>
+                        </section>
+                    </li>
+                    <li data-brackets-id='29005'>
+                        <section data-brackets-id='29006' id="card5">
+                        <div data-brackets-id='29007' id="card_container">card 5</div>
+                        </section>
+                    </li>
+                </ul> 
+            </div>
+        </center>
+    </body>
+</html>
