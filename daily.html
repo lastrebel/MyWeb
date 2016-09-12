@@ -14,14 +14,18 @@
             .fontred {
                 color:#FFAAAA;
             }
+            .fontgray{
+                color:#a0cc42;
+            }
             
             /* CARD */
             #card_container {
                 background:#fbfbfb;
                 width:300px;
-                min-height:300px;
+                min-height:150px;
                 border: 1px solid #a0cc42;
                 border-radius: 2px;
+                box-shadow: 0px 0.5px 2px 0.5px #cfcfcf;
             }
             #card_primarytitle,#card_secondarytitle,#card_instruction,#card_instruction2do,#list_name {
                 color: #a0cc42;
@@ -88,6 +92,9 @@
                 padding: 2px 5px;
                 text-align: right;
             }
+            #amount {
+                text-align: right;
+            }
             .completition {
                 width: 10%;
                 padding: 0px 0px;
@@ -126,14 +133,12 @@
             }
             
             li {
-                background: white;
                 margin: 2px;
                 width: 300px;
                 min-height: 300px;
                 max-height: 700px;
                 display: inline-block;
                 vertical-align:top;
-                box-shadow: 0px 0.5px 2px 0.5px #cfcfcf;
                 border-radius: 2px;
                 white-space:normal;
                 font-family: 'Lato', sans-serif;
@@ -609,11 +614,93 @@
                                 </table>
                                 <table id="list">
                                     <tr id="list_row" class="fontred no_bottom_border">
-                                        <td id="item" style="padding:50px 10px;">If you don't smoke today<br> it will be easier tomorrow to do the same & better</td><td id="time">
+                                        <td id="item" style="padding:50px 10px;text-align:right;">If you don't smoke today<br> it will be easier tomorrow to do the same & better</td><td id="time">
                                         
                                         <button style="display:block;"><a href="#reminder">reminder</a></button>
                                         
                                         </td><td class="completition "> </td>
+                                    </tr>
+                                </table>
+                                </center>
+                            </div>
+                            <br>
+                            <div id="card_container" style="background:#F5FAEA">
+                                <center>
+                                <p id="card_primarytitle">STUDY</p>
+                                <p id="card_secondarytitle">Words to learn today</p>
+                                <table id="list">
+                                    <tr id="list_row">
+                                        <td id="item">UX flows</td><td id="time"></td><td class="completition done"> </td>
+                                    </tr>
+                                    <tr id="list_row" >
+                                        <td id="item">Mockup</td><td id="time"></td><td class="completition done"> </td>
+                                    </tr>
+                                    <tr id="list_row">
+                                        <td id="item">Wireframe</td><td id="time"></td><td class="completition"> </td>
+                                    </tr>
+                                    <tr id="list_row" class="no_bottom_border">
+                                        <td id="item">Prototyp</td><td id="time"></td><td class="completition "> </td>
+                                    </tr>
+                                </table>
+                                <table id="list">
+                                    <tr id="list_row" class="fontred no_bottom_border">
+                                        <td id="item" style="padding:10px 10px; text-align:right;">Inspiration from job offer</td><td id="time">
+                                        
+                                        <button style="display:block;"><a href="https://www.rockawaycapital.com/en/vacancy/ux-designer-2/?vacancy_category=product" target="_blank">Article</a></button>
+                                        
+                                        </td><td class="completition "> </td>
+                                    </tr>
+                                </table>
+                                </center>
+                            </div>
+                            <br>
+                            <div id="card_container" style="background:#F5FAEA">
+                                <center>
+                                <p id="card_primarytitle">MONEY</p>
+                                <p id="card_secondarytitle">Today transactions</p>
+                                <table id="list">
+                                    <tr id="list_row">
+                                        <td id="item">Salary<br>July</td>
+                                        <td id="amount">+8100</td>
+                                        <td id="currency">czk</td>
+                                        <td id="time">all day</td>
+                                        <td class="completition done"> </td>
+                                    </tr>
+                                    <tr id="list_row" >
+                                        <td id="item">Tesco<br>Milk, donuts</td>
+                                        <td id="amount">-55,21</td>
+                                        <td id="currency">czk</td>
+                                        <td id="time">morning</td><td class="completition done"> </td>
+                                    </tr>
+                                    <tr id="list_row">
+                                        <td id="item">DM<br>rice milk</td>
+                                        <td id="amount">-34</td>
+                                        <td id="currency">czk</td>
+                                        <td id="time">morning</td><td class="completition done"> </td>
+                                    </tr>
+                                    <tr id="list_row" class="no_bottom_border">
+                                        <td id="item">+ add new</td>
+                                        <td id="amount">xx Kc</td>
+                                        <td id="time"></td><td class="completition"> </td>
+                                    </tr>
+                                </table>
+                                    <br>
+                                <table id="list">
+                                    <tr id="list_row" class="fontred">
+                                        <td id="item">+ transactions today</td>
+                                        <td id="amount">8 100,00</td>
+                                        <td id="currency">czk</td>
+                                    </tr>
+                                    <tr id="list_row" class="fontred">
+                                        <td id="item">- transactions today</td>
+                                        <td id="amount">89,21</td>
+                                        <td id="currency">czk</td>
+                                    </tr>
+                                    <tr><td><br></td></tr>
+                                    <tr id="list_row" class="fontred no_bottom_border">
+                                        <td id="item">conclusion at the end of day</td>
+                                        <td id="amount">+ 8 010,79</td>
+                                        <td id="currency">czk</td>
                                     </tr>
                                 </table>
                                 </center>
