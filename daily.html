@@ -15,7 +15,10 @@
                 color:#FFAAAA;
             }
             .fontgray{
-                color:#a0cc42;
+                color:gray;
+            }
+            .undone {
+                color:lightgray;
             }
             
             /* CARD */
@@ -106,6 +109,7 @@
                 background-repeat: no-repeat;
                 background-position: center;
             }
+            
             
         </style>
         <style>
@@ -591,24 +595,24 @@
                                 <p id="card_primarytitle">12.9.16</p>
                                 <p id="card_secondarytitle">called in sick</p>
                                 <table id="list">
-                                    <tr id="list_row">
-                                        <td id="item">- do gym again</td><td id="time"></td><td class="completition done"> </td>
+                                    <tr id="list_row" class="undone">
+                                        <td id="item">- do gym again</td><td id="time"></td><td class="completition "> </td>
                                     </tr>
                                     <tr id="list_row" >
                                         <td id="item">- eat regularly today</td><td id="time"></td><td class="completition done"> </td>
                                     </tr>
-                                    <tr id="list_row" class="no_bottom_border">
+                                    <tr id="list_row" class="undone no_bottom_border">
                                         <td id="item">-  work:<br>
                                             - 1xNL<br>- 49x Alt, Seo</td><td id="time"></td><td class="completition"> </td>
                                     </tr>
                                     <tr><td><br></td>
-                                    <tr id="list_row">
+                                    <tr id="list_row" class="undone">
                                         <td id="item">- assembly IKEA ERIK</td><td id="time">afternoon</td><td class="completition "> </td>
                                     </tr>
-                                    <tr id="list_row">
+                                    <tr id="list_row" class="undone">
                                         <td id="item">- sort bills</td><td id="time">afternoon</td><td class="completition"> </td>
                                     </tr>
-                                    <tr id="list_row">
+                                    <tr id="list_row" class="undone">
                                         <td id="item" >- throw away cardboards</td><td id="time">afternoon</td><td class="completition"> </td>
                                     </tr>
                                 </table>
@@ -635,10 +639,10 @@
                                     <tr id="list_row" >
                                         <td id="item">Mockup</td><td id="time"></td><td class="completition done"> </td>
                                     </tr>
-                                    <tr id="list_row">
+                                    <tr id="list_row" class="undone">
                                         <td id="item">Wireframe</td><td id="time"></td><td class="completition"> </td>
                                     </tr>
-                                    <tr id="list_row" class="no_bottom_border">
+                                    <tr id="list_row" class="undone no_bottom_border">
                                         <td id="item">Prototyp</td><td id="time"></td><td class="completition "> </td>
                                     </tr>
                                 </table>
@@ -678,9 +682,16 @@
                                         <td id="currency">czk</td>
                                         <td id="time">morning</td><td class="completition done"> </td>
                                     </tr>
-                                    <tr id="list_row" class="no_bottom_border">
+                                    <tr id="list_row" class="undone">
+                                        <td id="item">BBoulevard<br>patatas for lunch</td>
+                                        <td id="amount">-39</td>
+                                        <td id="currency">czk</td>
+                                        <td id="time">lunch</td><td class="completition undone"> </td>
+                                    </tr>
+                                    <tr id="list_row" class="undone no_bottom_border">
                                         <td id="item">+ add new</td>
-                                        <td id="amount">xx Kc</td>
+                                        <td id="amount">xx</td>
+                                        <td id="currency">czk</td>
                                         <td id="time"></td><td class="completition"> </td>
                                     </tr>
                                 </table>
