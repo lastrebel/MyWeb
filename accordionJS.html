@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <style>
+            body {
+                background: #DDD;
+                margin: 0;
+                -webkit-overflow-scrolling: touch;
+            }
+            header{
+                background: #333;
+                color:#fff;
+                padding: 20px;
+                position: relative;
+            }
+            main{
+                padding: 20px;
+            }
+            .site-title{
+                font-size: 1rem;
+            }
+            a{
+                text-decoration: none;
+            }
+            h4:hover{
+                text-decoration: underline;
+                background-color: grey;
+            }
+            h4 {
+                background-color: lightgrey;
+            }
+            .acc1,.acc2,.acc3 {
+                padding: 0 20px;
+                font-size: 12px;
+                background: #fff;
+                max-height: 0;
+                overflow: auto;
+                opacity: 0;
+                transition: all 0.2s ease;
+            }
+            .open {
+                padding: 20px;
+                max-height: 150px;
+                opacity: 1;
+            }
+            
+        </style>
+        <script>
+            $(function(){
+                $('.acc1-toggle').on('click', function(){
+                    $('.acc1').toggleClass('open');
+                });
+            });
+        </script>
+        <script>
+            $(function(){
+                $('.acc2-toggle').on('click', function(){
+                    $('.acc2').toggleClass('open');
+                });
+            });
+        </script>
+        <script>
+            $(function(){
+                $('.acc3-toggle').on('click', function(){
+                    $('.acc3').toggleClass('open');
+                });
+            });
+        </script>
+    </head>
+    
+    <body>
+        <center style="background-color: grey">
+        <button style="display:inline-block;margin:2px auto"><a href="index.html">back to index.html</a></button>
+        <button style="display:inline-block;"><a href="https://www.youtube.com/watch?v=PnQwPUKDcP0&index=6&list=PLLnpHn493BHGrSO0lNO-3SNuuoPuJrA1o" target="_blank">YT tutorial</a></button>
+        </center>
+        <header>
+            <h1 class="site-title">Site Name</h1>
+        </header>
+        <main>
+            <h2>Accordion</h2>
+            <p><br>
+            - write down in HTML the sceleton of accordion parts<br>
+            - style HTML open-state accordion part in CSS<br>
+            - style HTML closed-state accordion part in CSS<br>
+            - input content</p>
+            <p>
+            #1 load jQuery library from Google's API<br>
+            #2 define classes in CSS to be called later by JavaScript<br>
+            #3 input JavaScript function to call for class .toggleClass from jQuery and optimalize for defined classes from step(2)</p>
+            
+            
+            
+            <h4 class="acc1-toggle">Accordion Trigger 1</h4>
+            <p class="acc1">Hello I am the open part of 1. part</p>
+            
+            
+            <h4 class="acc2-toggle">Accordion Trigger 2</h4>
+            <p class="acc2">Hello I am the open part of 2. part</p>
+            
+            <h4 class="acc3-toggle">Accordion Trigger 3</h4>
+            <p class="acc3">Hello I am the open part of 3. part</p>
+        </main>
+    </body>
+</html>
