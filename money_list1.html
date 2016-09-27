@@ -39,19 +39,29 @@
     .showme{ 
         display: none;
         transition: all 2s ease-in-out;
-        opacity: 1;
-    }
-    .showhim:hover .showme{
-        display : block;
-        background: #efefef;
-        transition: all 2s ease-in-out;
-        animation: 
         opacity: 0.5;
+    }
+    .showhim:hover  .showme{
+        display : block;
+        transition: all 2s ease-in-out;
+        opacity: 1;
     }
     .showhim:hover .hideme{
         display : none;
     }
     .showhim:hover ~ .hideme2{ //~ sibling selector
+        display:none;
+    }
+    
+    .showhim:focus  .showme{
+        display : block;
+        transition: all 2s ease-in-out;
+        opacity: 1;
+    }
+    .showhim:focus .hideme{
+        display : none;
+    }
+    .showhim:focus ~ .hideme2{ //~ sibling selector
         display:none;
     }
 
@@ -209,7 +219,13 @@
                         <td class="type"> </td>
                         <td class="completition done vertic_ali"> </td>
                     </tr>
-                    
+                    <tr id="list_row">
+                        <td id="time">11:11</td><td id="item">lunch</td>
+                        <td id="location">Dhaba </td>
+                        <td  class="amount neg">- 122 CZK</td>
+                        <td class="type">CC</td>
+                        <td class="completition done vertic_ali"> </td>
+                    </tr>
                 </table>
             </div>
             <div class="hideme2"></div>
