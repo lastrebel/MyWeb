@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<style type="text/css"> 
+    
+    
+    
+/* GENERAL */
+    body {
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* CARD */
+    #card_container {
+        background:#fbfbfb;
+        width:400px;
+        min-height:300px;
+        border: 1px solid #a0cc42;
+        border-radius: 2px;
+    }
+    #card_primarytitle,#card_secondarytitle {
+        color: #a0cc42;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        line-height: 6px;
+    }
+
+    /* CARD TITLES */
+    #card_primarytitle {
+        font-size: 25px;
+    }
+    #card_secondarytitle {
+        font-size: 15px;
+    }
+
+    /* Content Sections */
+    .showme{ 
+        display: none;
+        transition: all 2s ease-in-out;
+        opacity: 1;
+    }
+    .showhim:hover .showme{
+        display : block;
+        background: #efefef;
+        transition: all 2s ease-in-out;
+        animation: 
+        opacity: 0.5;
+    }
+    .showhim:hover .hideme{
+        display : none;
+    }
+    .showhim:hover ~ .hideme2{ //~ sibling selector
+        display:none;
+    }
+
+
+
+    /* CONTENT rows */
+    .list {
+        width: 95%;
+        border-collapse: collapse;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+    }
+    .list1 {
+        background: ;
+    }
+    .list2 {
+        background: red;
+    }
+
+    #list_row {
+        border-bottom: 1px solid #d9ebb3;
+        font-size: 11px;
+    }
+    .no_bottom_border {
+        border-bottom: none!important;
+    }
+
+
+
+
+    /* CONTENT rows cells*/
+    #item,#time{
+
+    }
+    #item, #location {
+        width: 40%;
+        padding: 5px 5px;
+        line-height: 10px;
+        vertical-align:super;
+        overflow: auto;
+    }
+    #item {
+        width: 40%;
+    }
+    #location {
+        width: 15%;
+        color: lightgray;
+    }
+    #time {
+        width: 10%;
+        padding: 2px 5px;
+        text-align: right;
+        vertical-align:super;
+        color: lightgray;
+    }
+    .amount {
+        width: 19%;
+        padding: 2px px;
+        text-align: right;
+        vertical-align:super;
+    }
+    .type {
+        width: 1%;
+        text-align: right;
+        vertical-align:super;
+        color: lightgray;
+    }
+    .pos {
+        color: #a0cc42;
+    }
+    .neg {
+        color: red;
+    }
+    .neu {
+        color: gray;
+    }
+
+    .completition {
+        width: 10%;
+        padding: 0px 0px;
+        text-align: center;
+    }
+    .done {
+        background-image: url(Media/Lists/circle-check.png);
+        background-size: 14px;
+        background-repeat: no-repeat;
+        background-position:top;
+        background-position-y: calc(100% - 13px);
+    }
+    .vertic_ali {
+        background-position:center;
+    }
+    
+</style>
+</head>
+<body>
+    <center>
+    <button style="display:block;margin:10px auto"><a href="index.html">back to index.html</a></button>
+        <div class="showhim">
+    <div class="showme">Bye</div> 
+    <div class="hideme">Hello</div>
+</div>
+<div class="hideme2"></div>
+    <div id="card_container">
+        <center>
+        <p id="card_primarytitle">Transactions</p>
+        <p id="card_secondarytitle">Money Card</p>
+            <div class="showhim">
+                <table class="list hideme">
+                    <tr id="list_row">
+                        <td id="time">today</td>
+                        <td id="item">Earnined</td>
+                        <td id="location"> </td>
+                        <td class="amount pos">+ 510 CZK</td>
+                        <td class="completition done vertic_ali"> 
+                        </td>
+                    </tr>
+                    <tr id="list_row">
+                        <td id="time">today</td>
+                        <td id="item">Deducted</td>
+                        <td id="location"> </td>
+                        <td class="amount neg">- 1 347 CZK</td>
+                        <td class="completition done vertic_ali">
+                        </td>
+                    </tr>
+                    <tr id="list_row">
+                        <td id="time">today</td>
+                        <td id="item">Balance</td>
+                        <td id="location"> </td>
+                        <td class="amount neu">837 CZK</td>
+                        <td class="completition done vertic_ali"> </td>
+                    </tr>
+                </table>
+                <table class="list showme">
+                    <tr id="list_row">
+                        <td id="time">11:11</td><td id="item">Medová šunka 10g</td>
+                        <td id="location">MyTesco </td>
+                        <td  class="amount neg">- 10 CZK</td>
+                        <td class="type">CA</td>
+                        <td class="completition done vertic_ali"> </td>
+                    </tr>
+                    <tr id="list_row">
+                        <td id="time">11:11</td>
+                        <td id="item">Insurnance for Aug16 základní fond VZP</td>
+                        <td id="location">Shop name</td>
+                        <td class="amount neg">- 1 337,27 CZK</td>
+                        <td class="type">CC</td>
+                        <td class="completition done"> </td>
+                    </tr>
+                    <tr id="list_row">
+                        <td id="time">11:11</td>
+                        <td id="item">Working 4.25h</td>
+                        <td id="location">HO</td>
+                        <td  class="amount pos">-+ 510 CZK</td>
+                        <td class="type"> </td>
+                        <td class="completition done vertic_ali"> </td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <div class="hideme2"></div>
+            
+        
+        </center>
+    </div>
+        
+    
+
+        </center>
+    </body>
+</html>

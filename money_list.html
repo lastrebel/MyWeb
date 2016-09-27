@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+        <style>
+            /* GENERAL */
+            body {
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            /* CARD */
+            #card_container {
+                background:#fbfbfb;
+                width:400px;
+                min-height:300px;
+                border: 1px solid #a0cc42;
+                border-radius: 2px;
+            }
+            #card_primarytitle,#card_secondarytitle {
+                color: #a0cc42;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                text-align: center;
+                line-height: 6px;
+            }
+            
+            /* CARD TITLES */
+            #card_primarytitle {
+                font-size: 25px;
+            }
+            #card_secondarytitle {
+                font-size: 15px;
+            }
+            
+            /* Content Sections */
+            .container {
+                background: red;
+            }
+            .container:hover {
+                color: blue;
+            }
+            .hidden {
+                display: none
+            }
+            
+            
+            
+            /* CONTENT rows */
+            .list {
+                width: 95%;
+                border-collapse: collapse;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+            }
+            .list1 {
+                background: ;
+            }
+            .list2 {
+                background: red;
+            }
+            
+            #list_row {
+                border-bottom: 1px solid #d9ebb3;
+                font-size: 11px;
+            }
+            .no_bottom_border {
+                border-bottom: none!important;
+            }
+            
+            
+            
+            
+            /* CONTENT rows cells*/
+            #item,#time{
+                
+            }
+            #item, #location {
+                width: 40%;
+                padding: 5px 5px;
+                line-height: 10px;
+                vertical-align:super;
+                overflow: auto;
+            }
+            #item {
+                width: 40%;
+            }
+            #location {
+                width: 15%;
+                color: lightgray;
+            }
+            #time {
+                width: 10%;
+                padding: 2px 5px;
+                text-align: right;
+                vertical-align:super;
+            }
+            .amount {
+                width: 20%;
+                padding: 2px px;
+                text-align: right;
+                vertical-align:super;
+            }
+            .pos {
+                color: #a0cc42;
+            }
+            .neg {
+                color: red;
+            }
+            
+            .completition {
+                width: 10%;
+                padding: 0px 0px;
+                text-align: center;
+            }
+            .done {
+                background-image: url(Media/Lists/circle-check.png);
+                background-size: 14px;
+                background-repeat: no-repeat;
+                background-position:top;
+                background-position-y: calc(100% - 13px);
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <center>
+        <button style="display:block;margin:10px auto"><a href="index.html">back to index.html</a></button>
+        <div id="card_container">
+            <center>
+            <p id="card_primarytitle">Transactions</p>
+            <p id="card_secondarytitle">Money Card</p>
+                <div class="container">
+                    <table class="list list1">
+                        <tr id="list_row">
+                            <td id="time">11:11</td><td id="item">Insurnance for Aug16 základní fond VZP</td><td id="location">Shop name</td><td class="amount pos">- 1 337,27 CZK</td><td class="completition done"> </td>
+                        </tr>
+                        <tr id="list_row">
+                            <td id="time">11:11</td><td id="item">Medová šunka 10g</td><td id="location">MyTesco Národní</td><td  class="amount neg">- 10 CZK</td><td class="completition done"> </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="container hidden">
+                    <table class="list list2">
+                        <tr id="list_row">
+                            <td id="time">11:11</td><td id="item">Insurnance for Aug16 základní fond VZP</td><td id="location">Shop name</td><td class="amount pos">- 1 337,27 CZK</td><td class="completition done"> </td>
+                        </tr>
+                        <tr id="list_row">
+                            <td id="time">11:11</td><td id="item">Medová šunka 10g</td><td id="location">MyTesco Národní</td><td  class="amount neg">- 10 CZK</td><td class="completition done"> </td>
+                        </tr>
+                    </table>
+                </div>
+            </center>
+        </div>
+        </center>
+    </body>
+</html>

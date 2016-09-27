@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<style type="text/css"> 
+.showme{ 
+    display: none;
+}
+.showhim:hover .showme{
+    display : block;
+}
+.showhim:hover .hideme{
+    display : none;
+}
+.showhim:hover ~ .hideme2{ //~ sibling selector
+    display:none;
+}
+</style>
+</head>
+<body>
+<div class="showhim">
+    <div class="showme">hai</div> 
+    <div class="hideme">bye</div>
+</div>
+<div class="hideme2"></div>
+    </body>
+</html>
