@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Timeline (vertical)</title>
+        <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <style>
+            .container {
+                padding: 20px;
+            }
+            .notificationBar {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                position: relative;
+            }
+            .notificationBar li {
+                margin-top: 20px;
+            }
+            
+            .content {
+                margin-left: 160px;
+                margin-top: -30px;
+                border: 1px solid #ddd;
+                padding: 5px;
+                background-color: white;
+                border-radius: 3px;
+            }
+            .time {
+                min-width: 72px;
+                margin-left: 0px;
+                margin-top: -30px;
+                border: 1px solid white;
+                position: absolute;
+                color: #ddd;
+                text-align: right;
+                font-size: 10px;
+                text-shadow: 0px 0px 0px grey;
+            }
+            .time:after {
+                content: '';
+                width: 100px;
+                height: 1px;
+                position: absolute;
+                border-top: 1px solid #ddd;
+                top: 13px;
+                margin-left: -50px; 
+                z-index: -1;
+            }
+            
+            .notificationBar li i {
+                width: 30px;
+                min-height: 30px;
+                display: block;
+                text-align: center;
+                line-height: 30px;
+                border: 1px solid #ddd;
+                border-radius: 50px;
+                background-color: white;
+                margin-left: 100px;
+            }
+            
+            
+            .notificationBar li i:after {
+                content: '';
+                width: 60px;
+                height: 1px;
+                position: absolute;
+                border-top: 1px solid #ddd;
+                margin-top: 15px;
+                z-index: -1;
+            }
+            .notificationBar:after {
+                content: '';
+                width: 10px;
+                height: 100%;
+                background-color: #ddd;
+                position: absolute;
+                top: 4px;
+                left: 55px;
+                z-index: -1;
+                margin-left: 60px;
+            }
+            .notificationBar li i:after .green {
+                background-color: green!important;
+            }
+            
+            .undone
+            {
+                color:#ddd;
+                background-color: white;
+            }
+            
+            .line {
+                border-top: 1px solid #f2f2f2;
+            }
+            .bucket {
+                border: 1px dashed #f2f2f2;
+                border-width: 0.5px;
+                margin: 10px 0px 0px 0px;
+                padding-bottom: 20px;
+                padding-right: 20px;
+                overflow: auto;
+                color: #eee;
+                border-radius: 3px;
+            }
+            .list {
+                margin-left: 10px;
+                line-height: 0px;
+                list-style: disc;
+                padding-bottom: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <button style="display:block;margin:10px auto"><a href="index.html">back to index.html</a></button>
+        <div class="container">
+            <ul class="notificationBar">
+                <li>
+                    <div class="line"></div>
+                </li>
+
+                <div class="bucket">
+                <li>
+                    <i class="ion-plus undone"></i>
+                    <div class="time" style="margin-top: -px">18:30<br></div>
+                    <div class="content undone" style="margin-top: -px">prepare everything for Alex</div>
+                </li>
+                <li>
+                    <i class="ion-plus undone"></i>
+                    <div class="time" style="margin-top: -px">19:00<br></div>
+                    <div class="content undone" style="margin-top: px">movie<br>dinner<br>chat</div>
+                </li>
+                <li>
+                    <i class="ion-plus undone"></i>
+                    <div class="time" style="margin-top: -px">23:00<br></div>
+                    <div class="content undone" style="margin-top: -px">clean everything and get ready for tomorrow</div>
+                </li>
+                <li>
+                    <i class="ion-plus undone notificationBar_green"></i>
+                    <div class="time" style="margin-top: -px">14:45<br></div>
+                    <div class="content undone" style="margin-top: -px">ranajky</div>
+                </li>
+                <li>
+                    <i class="ion-plus undone"></i>
+                    <div class="time" style="margin-top: -px">15:00<br></div>
+                    <div class="content undone" style="margin-top: -px">sauna</div>
+                </li>
+                <li>
+                    <i class="ion-plus undone"></i>
+                    <div class="time" style="margin-top: -px">17:00<br></div>
+                    <div class="content undone" style="margin-top: -px">obed a palacinky</div>
+                </li>
+                <li>
+                    <i class="ion-plus undone"></i>
+                    <div class="time" style="margin-top: -px">18:00<br></div>
+                    <div class="content undone" style="margin-top: -px">work</div>
+                </li>
+                </div>
+                
+                <li>
+                    <i class="ion-plus undone"></i>
+                    <div class="time" style="margin-top: -px">23:30<br></div>
+                    <div class="content undone" style="margin-top: -px">book or walk</div>
+                </li>
+                <li>
+                    
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
