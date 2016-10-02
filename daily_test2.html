@@ -14,8 +14,20 @@
                 width: 500px;
                 height: 800px;
             }
+            .button a {
+                color: white!important;
+                text-decoration: none;
+            }
+            .button {
+    background-color: #a0cc42; /* button color */
+    border: none;
+    padding: 5px 32px;
+    border-radius: 2px;
+    text-align: center;
+    display: inline-block;
+}
             #instructions {
-                color:#a0cc42;
+                color:#afafaf;
                 margin: 0;
                 font-family: 'Lato', sans-serif;
                 font-weight: 300;
@@ -97,15 +109,18 @@
 <center>
     <body>
         <button style="display:block;margin:10px auto"><a href="index.html">back to index.html</a></button>
-        <li id="instructions">slide to control</li>
-        <li id="instructions">use navigation arrows on sides</li>
+        <p id="card_primarytitle" style="font-size:15px; font-weight:300; color:#afafaf">To navigate between cards<br>do any of the following:</p>
+        <br>
+        <li id="instructions">drag to sides</li>
+        <li id="instructions">click on arrows on sides</li>
+        <li id="instructions">use keys on your keyboard</li>
         <li id="instructions">swipe on the touch device</li>
         <br>
         
         
-        <button style="margin:10px 0"><a href="#card1">card1</a></button>
-        <button><a href="#card2">card2</a></button>
-        <button><a href="#card3">card3</a></button>
+        <button class="button" style="margin:10px 0"><a href="#card1">card1</a></button>
+        <button class="button"><a href="#card2">card2</a></button>
+        <button class="button"><a href="#card3">card3</a></button>
         
         <div style="width: 300px;
                 background: ;" class="single-item">
