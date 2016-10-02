@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        
+        <style>
+            /* GENERAL */
+            
+            body {
+                -webkit-overflow-scrolling: touch;
+                background: #f2f2f2;
+                margin: 0 auto;
+                width: 500px;
+                height: 800px;
+            }
+            #instructions {
+                color:#a0cc42;
+                margin: 0;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                font-size: 12px;
+                text-align: left;
+                padding-left: 100px;
+            }
+            
+            /* CARD */
+            #card_container {
+                background: white;
+                width:300px;
+                height: 500px;
+                min-height:00px;
+                border: 0px solid #a0cc42;
+                border-radius: 2px;
+                padding-top: 10px;
+            }
+            #card_primarytitle,#card_secondarytitle {
+                margin: 10px;
+                color: #a0cc42;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                text-align: center;
+            }
+            
+            /* CARD TITLES */
+            #card_primarytitle {
+                font-size: 25px;
+            }
+            #card_secondarytitle {
+                font-size: 15px;
+            }
+            
+            /* CONTENT rows */
+            #list {
+                width: 95%;
+                border-collapse: collapse;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+            }
+            #list_row {
+                border-bottom: 1px solid #d9ebb3;
+                font-size: 11px;
+            }
+            .no_bottom_border {
+                border-bottom: none!important;
+            }
+            
+            /* CONTENT rows cells*/
+            #item,#time{
+                
+            }
+            #item {
+                width: 70%;
+                padding: 5px 5px;
+            }
+            #time {
+                width: 10%;
+                padding: 2px 5px;
+                text-align: right;
+            }
+            .completition {
+                width: 10%;
+                padding: 0px 0px;
+                text-align: center;
+            }
+            .done {
+                background-image: url(Media/Lists/circle-check.png);
+                background-size: 15px;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            
+        </style>
+        
+    </head>
+<center>
+    <body>
+        <button style="display:block;margin:10px auto"><a href="index.html">back to index.html</a></button>
+        <li id="instructions">slide to control</li>
+        <li id="instructions">use navigation arrows on sides</li>
+        <li id="instructions">swipe on the touch device</li>
+        <br>
+        
+        
+        <button style="margin:10px 0"><a href="#card1">card1</a></button>
+        <button><a href="#card2">card2</a></button>
+        <button><a href="#card3">card3</a></button>
+        
+        <div style="width: 300px;
+                background: ;" class="single-item">
+            <section id="card1">
+            <div class="slide">
+                <div id="card_container">
+                    <p id="card_primarytitle"></p>
+                    <p id="card_secondarytitle">card1</p>
+                    <table id="list">
+                        <tr id="list_row">
+                            <td id="item">Laundry: loaded & started</td><td id="time">11:11</td><td class="completition "> </td>
+                        </tr>
+                        <tr id="list_row">
+                            <td id="item">Laundry: loaded & started</td><td id="time">11:11</td><td class="completition done"> </td>
+                        </tr>
+                        <tr id="list_row">
+                            <td id="item">Laundry: loaded & started</td><td id="time">11:11</td><td class="completition done"> </td>
+                        </tr>
+                         <tr id="list_row">
+                            <td id="item">Laundry: loaded & started</td><td id="time">11:11</td><td class="completition "> </td>
+                        </tr>
+                        <tr id="list_row">
+                            <td id="item">Laundry: loaded & started</td><td id="time">11:11</td><td class="completition done"> </td>
+                        </tr>
+                        <tr id="list_row" class="no_bottom_border">
+                            <td id="item">Laundry: loaded & started</td><td id="time">11:11</td><td class="completition done"> </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            </section>
+            <section id="card2">
+            <div class="slide">
+                <div id="card_container">
+                <p id="card_primarytitle"></p>
+                <p id="card_secondarytitle">card2</p>
+                <table id="list">
+                    <tr id="list_row">
+                        <td id="item">Laundry: loaded & started</td><td id="time">11:11</td><td class="completition "> </td>
+                    </tr>
+                    <tr id="list_row">
+                        <td id="item">Laundry: loaded & started</td><td id="time">11:11</td><td class="completition done"> </td>
+                    </tr>
+                    <tr id="list_row">
+                        <td id="item">Laundry: loaded & started</td><td id="time">11:11</td><td class="completition done"> </td>
+                    </tr>
+                     <tr id="list_row">
+                        <td id="item">Laundry: loaded & started</td><td id="time">11:11</td><td class="completition "> </td>
+                    </tr>
+                    <tr id="list_row">
+                        <td id="item">Laundry: loaded & started</td><td id="time">11:11</td><td class="completition "> </td>
+                    </tr>
+                    <tr id="list_row">
+                        <td id="item">Laundry: loaded & started</td><td id="time">11:11</td><td class="completition done"> </td>
+                    </tr>
+                    <tr id="list_row" class="no_bottom_border">
+                        <td id="item">Laundry: loaded & started</td><td id="time">11:11</td><td class="completition done"> </td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+            </section>
+            <section id="card3">
+            <div class="slide">
+                <div id="card_container">
+                <p id="card_primarytitle"></p>
+                <p id="card_secondarytitle">card3</p>
+                <table id="list">
+                    <tr id="list_row">
+                        <td id="item">Laundry: loaded & started</td><td id="time">11:11</td><td class="completition "> </td>
+                    </tr>
+                    <tr id="list_row">
+                        <td id="item">Laundry: loaded & started</td><td id="time">11:11</td><td class="completition done"> </td>
+                    </tr>
+                    <tr id="list_row">
+                        <td id="item">Laundry: loaded & started</td><td id="time">11:11</td><td class="completition done"> </td>
+                    </tr>
+                     <tr id="list_row">
+                        <td id="item">Laundry: loaded & started</td><td id="time">11:11</td><td class="completition "> </td>
+                    </tr>
+                    <tr id="list_row">
+                        <td id="item">Laundry: loaded & started</td><td id="time">11:11</td><td class="completition done"> </td>
+                    </tr>
+                    <tr id="list_row" class="no_bottom_border">
+                        <td id="item">Laundry: loaded & started</td><td id="time">11:11</td><td class="completition done"> </td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+            </section>
+        </div>
+            
+            
+            <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script>
+            $(".single-item").slick({
+                autoplay: false,
+                autospeed: 300,
+                centerMode: true,
+                dots: true,
+                variableWidth: true,
+                infinite: false,
+                fade: false
+            })
+        </script>
+    </body>
+</center>
+</html>
